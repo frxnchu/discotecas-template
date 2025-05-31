@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Promotora de fiestas light - Eventos para jóvenes, música, luces y diversión." />
+  <title>Last Day</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    function toggleDetalles(id) {
+      const detalles = document.getElementById(id);
+      detalles.classList.toggle("visible");
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo-nav">
+      <img src="logo.jpg" alt="Logo de la promotora" />
+      <span>Last Day</span>
+    </div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#eventos">Próximas fiestas</a></li>
+      <li><a href="#galeria">Galería de fiestas anteriores</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+
+  <header id="inicio" class="hero">
+    <div class="overlay">
+      <h1 class="logo">LAST DAY</h1>
+      <h3>Mejor promotora light de madrid</h3>
+      <br>
+      <a href="#eventos" class="btn">Ver próximos eventos</a>
+    </div>
+  </header>
+
+  <section id="eventos" class="eventos">
+    <h1>Próximos eventos</h1>
+    <div class="eventos-lista">
+
+      <article class="evento">
+        <h2>Fiesta Ejemplo</h2>
+        <img src="fiesta.jfif" alt="Flyer del evento 1" />
+        <h3>The New Era</h3>
+        <button class="btn btn-secundario" onclick="toggleDetalles('detalles1')">+ Info</button>
+        <ul id="detalles1" class="detalles">
+          <li><strong>Fecha:</strong> 6 de junio de 2025</li>
+          <li><strong>Lugar:</strong> Fitz, Calle Princesa 1</li>
+          <li><strong>Detalles:</strong> Fiesta temática con luces fluorescentes y DJ invitados.</li>
+        </ul>
+      </article>
+
+      <article class="evento">
+        <h2>Fiesta Ejemplo</h2>
+        <img src="flyer.jpg_large" alt="Flyer del evento 2" />
+        <h3>Fiesta De Vuelta</h3>
+        <button class="btn btn-secundario" onclick="toggleDetalles('detalles2')">+ Info</button>
+        <ul id="detalles2" class="detalles">
+          <li><strong>Fecha:</strong> 8 de marzo de 2024</li>
+          <li><strong>Lugar:</strong> Espacio Joven, Ciudad</li>
+          <li><strong>Detalles:</strong> Dress code blanco, iluminación UV y concurso de baile.</li>
+        </ul>
+      </article>
+
+      <article class="evento">
+        <h2>Fiesta Ejemplo</h2>
+        <img src="flyer2.jfif" alt="Flyer del evento 3" />
+        <h3>Fiesta Summer Beats</h3>
+        <button class="btn btn-secundario" onclick="toggleDetalles('detalles3')">+ Info</button>
+        <ul id="detalles3" class="detalles">
+          <li><strong>Fecha:</strong> 13 de abril de 2024</li>
+          <li><strong>Lugar:</strong> Teatro Eslava</li>
+          <li><strong>Detalles:</strong> Música urbana, zona chill, batucada y food trucks.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="galeria" class="galeria">
+    <h2>Galería</h2>
+    <div class="galeria-grid">
+      <div class="galeria-item">
+        <img src="images.jfif" alt="Evento 1">
+      </div>
+      <div class="galeria-item">
+        <img src="2023-09-19.webp" alt="Evento 2">
+      </div>
+      <div class="galeria-item">
+        <img src="2023-09-20.webp" alt="Evento 3">
+      </div>
+      <div class="galeria-item">
+        <img src="images (1).jfif" alt="Evento 4">
+      </div>
+      <div class="galeria-item">
+        <img src="images (2).jfif" alt="Evento 5">
+      </div>
+      <div class="galeria-item">
+        <img src="logo.jpg" alt="Evento 6">
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres colaborar o necesitas más info?</p>
+    <form action="#" method="POST">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu email" required />
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Last Day. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
